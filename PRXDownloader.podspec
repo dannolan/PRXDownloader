@@ -26,11 +26,8 @@ s.social_media_url = 'https://twitter.com/dannolan'
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 
-s.public_header_files = 'PRXDownloader/*.h'
-s.source_files = 'PRXDownloader/*.{h,m}'
+s.public_header_files = 'Pod/Classes/*.h'
+s.source_files = 'Pod/Classes/*.{h,m}'
 s.frameworks = 'Foundation', 'CoreFoundation'
 
-# s.public_header_files = 'Pod/Classes/**/*.h'
-# s.frameworks = 'UIKit', 'MapKit'
-# s.dependency 'AFNetworking', '~> 2.3'
 end
