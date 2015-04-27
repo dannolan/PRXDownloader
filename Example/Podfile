@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'PRXDownloader', :exclusive => true do
+  pod "PRXDownloader", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "PRXDownloader", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
