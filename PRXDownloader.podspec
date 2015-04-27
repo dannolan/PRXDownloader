@@ -8,31 +8,29 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "PRXDownloader"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of PRXDownloader."
-  s.description      = <<-DESC
-                       An optional longer description of PRXDownloader
+s.name             = "PRXDownloader"
+s.version          = "0.0.5"
+s.summary          = "A super simple thread safe downloaderydoo for iOS. MADE WITH LOVE AND PUPPIES AND MAGIC"
+s.description      = <<-DESC
+This project is an objc version of the downloader we use at Proxima. It's a huge work in progress. I am improving it when I can give it spare time, in the time honoured tradition of open source.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PRXDownloader"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "Dan Nolan" => "dan.james.nolan@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PRXDownloader.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+DESC
+s.homepage         = "https://github.com/dannolan/PRXDownloader"
+# s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+s.license          = 'MIT'
+s.author           = { "Dan Nolan" => "dan@proxima.io" }
+s.source           = { :git => "https://github.com/dannolan/PRXDownloader.git", :tag => s.version.to_s }
+s.social_media_url = 'https://twitter.com/dannolan'
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'PRXDownloader' => ['Pod/Assets/*.png']
-  }
+s.platform     = :ios, '8.0'
+s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.public_header_files = 'PRXDownloader/*.h'
+s.source_files = 'PRXDownloader/*.{h,m}'
+s.frameworks = 'Foundation', 'CoreFoundation'
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit', 'MapKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 end
