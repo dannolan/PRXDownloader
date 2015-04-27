@@ -13,6 +13,7 @@ There is no example project, basically just include the project, instantiate a P
 
 - An iOS Application that wants to download things and whatnot
 - Patience and time as this is not particularly well documented.
+- An ability to hit me up and call me a gronk if something is busted
 
 ## Installation
 
