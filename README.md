@@ -1,6 +1,6 @@
 # PRXDownloader
 
-[![CI Status](http://img.shields.io/travis/Dan Nolan/PRXDownloader.svg?style=flat)](https://travis-ci.org/Dan Nolan/PRXDownloader)
+[![CI Status](http://img.shields.io/travis/dannolan/PRXDownloader.svg?style=flat)](https://travis-ci.org/dannolan/PRXDownloader)
 [![Coverage Status](https://coveralls.io/repos/dannolan/PRXDownloader/badge.svg)](https://coveralls.io/r/dannolan/PRXDownloader)
 [![Version](https://img.shields.io/cocoapods/v/PRXDownloader.svg?style=flat)](http://cocoapods.org/pods/PRXDownloader)
 [![License](https://img.shields.io/cocoapods/l/PRXDownloader.svg?style=flat)](http://cocoapods.org/pods/PRXDownloader)
