@@ -4,12 +4,22 @@
 
 language: objective-c
 # cache: cocoapods
-# podfile: Example/Podfile
+podfile: Example/Podfile
 # before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
+before_install:
+  - brew update
+  - brew uninstall xctool
+  - brew install xctool
+  - export LANG=en_US.UTF-8
+  - gem i activesupport
+  - gem i cocoapods --no-ri --no-rdoc
+  - gem i slather --no-rdoc
 install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+- bundle install --without=documentation --path ../travis_bundle_dir
 script:
 - set -o pipefail && xcodebuild test -workspace Example/PRXDownloader.xcworkspace -scheme PRXDownloader-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
+after_success: slather
