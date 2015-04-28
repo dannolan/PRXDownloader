@@ -2,3 +2,4 @@
 
 coverage_service: coveralls
 xcodeproj: Example/PRXDownloader.xcodeproj
+source_directory: Pod/Classes
