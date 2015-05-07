@@ -25,9 +25,7 @@
 
 - (BOOL)currentlyDownloading;
 
-
-
-
-
+- (PRXDownloadProgress*)progressItemForURL:(NSString*)urlString;
+- (PRXDownloadItem*)downloadItemForURL:(NSString*)urlString;
 
 @end
