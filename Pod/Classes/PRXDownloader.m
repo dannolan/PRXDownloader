@@ -235,7 +235,7 @@
     if (dict[urlString]) {
         return dict[urlString];
     }
-    return nil;x
+    return nil;
 }
 
 #pragma mark Notification mechanisms
