@@ -218,6 +218,26 @@
     }
 }
 
+#pragma mark progress accessors
+
+- (PRXDownloadProgress*)progressItemForURL:(NSString*)urlString
+{
+    NSDictionary* dict = [self currentProgressItems];
+    if (dict[urlString]) {
+        return dict[urlString];
+    }
+    return nil;
+}
+
+- (PRXDownloadItem*)downloadItemForURL:(NSString*)urlString
+{
+    NSDictionary* dict = [self currentQueueItems];
+    if (dict[urlString]) {
+        return dict[urlString];
+    }
+    return nil;x
+}
+
 #pragma mark Notification mechanisms
 
 - (void)postDownloadStateUpdatedNotification

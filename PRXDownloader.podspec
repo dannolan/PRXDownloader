@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "PRXDownloader"
-s.version          = "0.0.5"
+s.version          = "0.0.7"
 s.summary          = "A super simple thread safe downloaderydoo for iOS. MADE WITH LOVE AND PUPPIES AND MAGIC"
 s.description      = <<-DESC
 This project is an objc version of the downloader we use at Proxima. It's a huge work in progress. I am improving it when I can give it spare time, in the time honoured tradition of open source.
