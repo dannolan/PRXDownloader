@@ -166,6 +166,7 @@
     PRXDownloadProgress* progress = [[PRXDownloadProgress alloc] initWithTotalSize:totalSize andDownloadedSize:downloadedSize];
     dispatch_sync(self.downloaderQueue, ^{
         [self.progressDict setObject:progress forKey:identifier];
+        [self postDownloadStateUpdatedNotification];
         //if I want to potentially I could post the notification here?
     });
 }
